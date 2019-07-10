@@ -192,7 +192,6 @@ public final class JavassistProxyFactory
             targetCt.addMethod(method);
          }
       }
-
       targetCt.getClassFile().setMajorVersion(ClassFile.JAVA_7);
       targetCt.writeFile("target/classes");
    }
