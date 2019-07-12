@@ -9,9 +9,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringTokenizer;
 
-import org.hibernate.engine.jdbc.internal.FormatStyle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.zaxxer.hikari.format.org.hibernate.engine.jdbc.internal.FormatStyle;
 
 /**功能说明：sql工具类
  * @author:qiaoruhong;e-mail： rhqiao@travelsky.com

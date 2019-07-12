@@ -22,11 +22,6 @@
  * Boston, MA  02110-1301  USA
  */
 package com.zaxxer.hikari.format.org.hibernate.engine.jdbc.internal;
-
-import org.hibernate.engine.jdbc.internal.BasicFormatterImpl;
-import org.hibernate.engine.jdbc.internal.DDLFormatterImpl;
-import org.hibernate.engine.jdbc.internal.Formatter;
-
 /**
  * Represents the the understood types or styles of formatting. 
  *

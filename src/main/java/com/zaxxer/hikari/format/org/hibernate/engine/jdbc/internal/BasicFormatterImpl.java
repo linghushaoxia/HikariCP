@@ -28,9 +28,6 @@ import java.util.LinkedList;
 import java.util.Locale;
 import java.util.Set;
 import java.util.StringTokenizer;
-
-import org.hibernate.internal.util.StringHelper;
-
 /**
  * Performs formatting of basic SQL statements (DML + query).
  *
@@ -116,7 +113,7 @@ public class BasicFormatterImpl implements Formatter {
 		public FormatProcess(String sql) {
 			tokens = new StringTokenizer(
 					sql,
-					"()+*/-=<>'`\"[]," + StringHelper.WHITESPACE,
+					"()+*/-=<>'`\"[]," + " \n\r\f\t",
 					true
 			);
 		}
@@ -384,7 +381,7 @@ public class BasicFormatterImpl implements Formatter {
 		}
 
 		private static boolean isWhitespace(String token) {
-			return StringHelper.WHITESPACE.contains( token );
+			return " \n\r\f\t".contains( token );
 		}
 
 		private void newline() {
